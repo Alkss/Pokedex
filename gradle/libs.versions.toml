@@ -1,21 +1,47 @@
 [versions]
 agp = "8.4.0-alpha03"
+androidxJunit = "1.1.3"
+coilCompose = "2.6.0"
+converterGson = "2.8.0"
+espressoCoreVersion = "3.4.0"
 hiltAndroid = "2.50"
+hiltAndroidTesting = "2.50"
+hiltAndroidVersion = "2.50"
+hiltCompiler = "2.50"
+hiltNavigationCompose = "1.2.0"
 kotlin = "1.9.0"
-coreKtx = "1.12.0"
+coreKtx = "1.10.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.7.0"
-activityCompose = "1.8.2"
-composeBom = "2024.03.00"
-roomVersion = "2.6.1"
+kotlinxCoroutinesTest = "1.7.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2023.08.00"
+loggingInterceptor = "4.9.0"
+materialIconsCore = "1.6.2"
+mockk = "1.13.9"
+mockkAndroid = "1.13.9"
+mockkAgent = "1.13.9"
+retrofit = "2.9.0"
+okhttp = "4.9.0"
+roomVersion = "2.4.1"
 junitKtx = "1.1.5"
-navigationRuntimeKtx = "2.7.7"
-navigationCompose = "2.7.7"
+navigationRuntimeKtx = "2.7.6"
+navigationCompose = "2.7.6"
+material3Android = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-junit-v113 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+androidx-material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "materialIconsCore" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidVersion" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltAndroidTesting" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -29,6 +55,13 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+mockk-agent = { module = "io.mockk:mockk-agent", version.ref = "mockkAgent" }
+mockk-android = { module = "io.mockk:mockk-android", version.ref = "mockkAndroid" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
@@ -36,6 +69,7 @@ room-testing = { group = "androidx.room", name = "room-testing", version.ref = "
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

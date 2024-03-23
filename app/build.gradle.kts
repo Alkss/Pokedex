@@ -62,33 +62,33 @@ android {
 
 dependencies {
     //Tests
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    testImplementation("io.mockk:mockk:1.13.9")
-    testImplementation("io.mockk:mockk-android:1.13.9")
-    testImplementation("io.mockk:mockk-agent:1.13.9")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.1")
+    androidTestImplementation(libs.androidx.junit.v113)
+    androidTestImplementation(libs.androidx.espresso.core.v340)
+    testImplementation(libs.mockk)
+    testImplementation(libs.mockk.android)
+    testImplementation(libs.mockk.agent)
+    testImplementation(libs.kotlinx.coroutines.test)
     //Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.okhttp3:okhttp:4.9.0")
-    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.8.0")
+    implementation(libs.retrofit)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.converter.gson)
 
     //Dagger - Hilt
-    implementation("com.google.dagger:hilt-android:2.50")
+    implementation(libs.hilt.android)
     implementation(libs.androidx.junit.ktx)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0-alpha01")
-    kapt("com.google.dagger:hilt-compiler:2.50")
+    implementation(libs.androidx.hilt.navigation.compose)
+    kapt(libs.hilt.compiler)
 
     // For instrumentation tests
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.50")
-    kaptAndroidTest("com.google.dagger:hilt-compiler:2.50")
+    androidTestImplementation(libs.hilt.android.testing)
+    kaptAndroidTest(libs.hilt.compiler)
 
     // For local unit tests
-    testImplementation("com.google.dagger:hilt-android-testing:2.50")
-    kaptTest("com.google.dagger:hilt-compiler:2.50")
+    testImplementation(libs.hilt.android.testing)
+    kaptTest(libs.hilt.compiler)
 
     //room dependencies
     implementation(libs.room.runtime)
@@ -96,15 +96,16 @@ dependencies {
     implementation(libs.room.ktx)
     testImplementation(libs.room.testing)
 
+    implementation(libs.coil.compose)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.material.icons.core)
+    implementation(libs.androidx.material3.android)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-//    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
