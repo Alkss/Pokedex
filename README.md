@@ -32,7 +32,7 @@ On the detail page, the user will be shown some information about the pokemon an
 
 ## Screenshots
 
-![App Screenshot](https://gyazo.com/bbb65f319524c7ec7f4af9214cca1613)
+![App Screenshot]([https://gyazo.com/bbb65f319524c7ec7f4af9214cca1613](https://i.gyazo.com/bbb65f319524c7ec7f4af9214cca1613.png))
 ![App Screenshot](https://gyazo.com/0a43bf157b92f0d99ff7f69d3309a4a1)
 ![App Screenshot](https://gyazo.com/675aa9e42244c0d36472bc0c3b0e1133)
 ![App Screenshot](https://gyazo.com/040e29ef01f58f8cc2c1734006d5538a)
