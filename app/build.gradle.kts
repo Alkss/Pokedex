@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.alkss.meight"
+    namespace = "com.alkss.pokedex"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.alkss.baseapp"
+        applicationId = "com.alkss.pokedex"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
